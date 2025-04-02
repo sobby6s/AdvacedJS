@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="module">
+        import { Student } from "./js/student.js"
+        let student1 = new Student(1, "Oprea", "Stefan", 33);
+        let student2 = new Student(1, "Manolescu", "Jenel", 73);
+        console.log("Student 1 :>>", student1);
+        console.log("Student 2 :>>", student2);
+
+
+        student1.salut();
+        student2.salut();
+        student1.examen(8, 4);
+        student1.calMedia();
+    </script>
+
+</body>
+</html>
